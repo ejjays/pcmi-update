@@ -57,7 +57,7 @@ body {
 .new-update-title {
     display: block;  /* Change from inline-block to block */
     white-space: nowrap;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #007bff;
     opacity: 0;
     transform: translateX(-50px);
@@ -71,7 +71,7 @@ body {
 .title-container {
     min-height: 70px;  /* Match the title height */
     position: relative;
-    margin-bottom: 20px;  /* Add some spacing */
+    margin-bottom: 5px;  /* Add some spacing */
     width: 100%;
 }
 
