@@ -185,6 +185,18 @@ body {
 }
 
 
+.video-title {
+    text-align: center;
+    color: #007bff;  /* matches your title color */
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMoveUp 1s ease-out forwards;
+    animation-delay: 1.8s; /* adjust timing to match your other animations */
+    margin-top: -30px;
+}
+
+
 .video-container {
     display: flex;
     justify-content: center;
