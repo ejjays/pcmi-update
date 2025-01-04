@@ -54,6 +54,7 @@ body {
 }
 
 .new-update-title {
+    display: inline-block;
     white-space: nowrap;
     font-size: 3rem;
     color: #007bff;
