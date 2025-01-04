@@ -53,6 +53,15 @@ body {
     animation-delay: 0.3s; /* Adjust the delay for smoother appearance */
 }
 
+.new-update-title {
+    white-space: nowrap;
+    font-size: 3rem;
+    color: #007bff;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideFadeInFromLeft 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
 
 .subtitle {
     font-size: 1.25rem; /* Adjusted to a smaller size */
@@ -115,19 +124,9 @@ body {
 
 /* Add responsive design */
 @media (max-width: 767px) {
-   .new-update-title {
-    white-space: nowrap;
-    font-size: 2rem;
-    border-right: 3px solid #000;
-    padding-right: 5px;
-    color: #007bff; /* Keep the text-primary color */
-    animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000 }
-}
+    .new-update-title {
+        font-size: 2rem;
+    }
     
     .subtitle {
         font-size: 1rem; /* Adjusted to a smaller size for smaller screens */
@@ -172,5 +171,3 @@ body {
         transform: translateX(0);
     }
 }
-
-
