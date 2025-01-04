@@ -45,16 +45,17 @@ body {
 }
 
 .logo-top {
-    height: 80px; /* Adjust the height as needed */
-    margin-bottom: 20px; /* Adjust the spacing as needed */
+    display: block; /* Change from default inline */
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    height: 80px;
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeInMoveUp 1.2s ease-out forwards;
-    animation-delay: 0.3s; /* Adjust the delay for smoother appearance */
+    animation-delay: 0.3s;
 }
 
 .new-update-title {
-    display: inline-block;
+    display: block;  /* Change from inline-block to block */
     white-space: nowrap;
     font-size: 3rem;
     color: #007bff;
@@ -62,6 +63,16 @@ body {
     transform: translateX(-50px);
     animation: slideFadeInFromLeft 1s ease-out forwards;
     animation-delay: 0.5s;
+    height: 70px;  /* Add fixed height */
+    margin: 0 auto;  /* Center the text */
+    position: relative;  /* Add position relative */
+}
+
+.title-container {
+    min-height: 70px;  /* Match the title height */
+    position: relative;
+    margin-bottom: 20px;  /* Add some spacing */
+    width: 100%;
 }
 
 .subtitle {
