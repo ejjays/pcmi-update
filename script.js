@@ -6,4 +6,4 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.add("pulse");
         }, (2000 + index * 500)); // Adjust timing based on animation delays
     });
-});
+}); 
