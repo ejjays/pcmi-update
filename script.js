@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Deleting animation
         if (isDeleting) {
-            // Remove exclamation point during deletion
-            typingText.textContent = text.substring(0, charIndex);  // Removed exclamation here
+            typingText.textContent = text.substring(0, charIndex);
             charIndex--;
             
             if (charIndex < 0) {
@@ -41,18 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(animate, 150);
     }
 
-    // Delay the start of typing animation until other animations are complete
-    // The longest animation delay is 2.2s (btn-success) + 1s (animation duration)
+    // Wait for initial slide/fade animation (1.5s) + all other animations (2.2s) + 2s extra delay
     setTimeout(() => {
         animate();
-    }, 3300); // 3.3 seconds total delay
-
-    // Keep your existing card animation code
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card, index) => {
-        card.style.setProperty("--i", index);
-        setTimeout(() => {
-            card.classList.add("pulse");
-        }, (2000 + index * 500));
-    });
+    }, 5700); // 1.5s + 2.2s + 2s = 5.7s total delay
 });
